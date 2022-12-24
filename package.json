@@ -1,7 +1,7 @@
 {
   "name": "pjblog-plugin-hot-articles",
   "description": "PJBlog插件之热门日志，根据日志阅读量统计最高的日志集合。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/pjblog/pjblog-plugin-hot-articles",
   "homepage": "https://npmjs.com/pjblog-plugin-hot-articles",
   "cache": "file",
@@ -44,7 +44,7 @@
   },
   "pjblog": {
     "type": "plugin",
-    "icon": "https://app-cdn.zblogcn.com/files/phpplugin/iddahe_com_schedule/logo.png-logo",
+    "icon": "https://t3.ftcdn.net/jpg/01/02/15/92/240_F_102159279_Qh2xu6B04KEntAidqdjD1XHuW5AE2yLJ.jpg",
     "extends": {}
   },
   "orm": {

@@ -51,10 +51,10 @@ export default class HotArticle extends Plugin<IConfigs> {
   public async initialize(): Promise<void | (() => Promise<void>)> {
     // 添加路由
     this.http.addController(this, HotArticlesController);
-    this.logger.info('pjblog-plugin-relative-articles Initialized.');
+    this.logger.info('pjblog-plugin-hot-articles Initialized.');
     return async () => {
       this.http.delController(HotArticlesController);
-      this.logger.info('pjblog-plugin-relative-articles Terminated.');
+      this.logger.info('pjblog-plugin-hot-articles Terminated.');
     }
   }
 }

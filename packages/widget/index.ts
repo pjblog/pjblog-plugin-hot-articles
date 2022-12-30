@@ -6,6 +6,9 @@ import { Plugin, Article } from '@pjblog/core';
 import { HotArticlesController } from './controller';
 import { IConfigs } from './utils';
 
+export * from './controller';
+export * from './utils';
+
 @Provider
 export default class HotArticle extends Plugin<IConfigs> {
   @Consumer(Logger) private readonly Logger: Logger;
@@ -50,7 +53,7 @@ export default class HotArticle extends Plugin<IConfigs> {
    */
   public async initialize(): Promise<void | (() => Promise<void>)> {
     // 添加路由
-    this.http.addController(this, HotArticlesController);
+    this.http.addController(HotArticlesController);
     this.logger.info('pjblog-plugin-hot-articles Initialized.');
     return async () => {
       this.http.delController(HotArticlesController);
